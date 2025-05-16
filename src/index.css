@@ -5,6 +5,18 @@
 @theme {
   --font-montserrat: 'Montserrat', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
+  --color-primary: #ff624c;
+  --color-secondary: #1a237b;
+  --color-colorOne: #bd0034;
+  --color-clolorTwo: #d9d9d9;
+  --color-colorThree: #fed550;
+  --color-colorFour: #303030;
+  --color-colorFive: #ffffff;
+  --color-colorSix: #d9d9d9;
+  --color-colorSeven: #f4f4f4;
+  --color-colorEight: #00579f;
+  --color-colorNine: #283b82;
+  --color-colorTen: #469bdb;
 }
 
 @utility container {

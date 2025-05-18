@@ -23,3 +23,7 @@
   width: 1520px;
   margin: 0px auto;
 }
+
+.coustom-select .ant-select-selector {
+  border: none !important;
+}

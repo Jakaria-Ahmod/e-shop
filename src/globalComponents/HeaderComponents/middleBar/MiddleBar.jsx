@@ -1,0 +1,22 @@
+import React from 'react';
+import Logo from '../../../assets/svg/Logo';
+import ShcarceWithCart from './ShcarceWithCart';
+
+const MiddleBar = () => {
+  return (
+    <div>
+      <div className="container">
+        <div className="flex items-center py-[22px]">
+          <div className="w-[50%]">
+            <Logo></Logo>
+          </div>
+          <div className="w-[50%]">
+            <ShcarceWithCart />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MiddleBar;

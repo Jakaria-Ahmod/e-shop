@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../../assets/svg/Logo';
 import ShcarceWithCart from './ShcarceWithCart';
+import { Link } from 'react-router';
 
 const MiddleBar = () => {
   return (
@@ -8,7 +9,9 @@ const MiddleBar = () => {
       <div className="container">
         <div className="flex items-center py-[22px]">
           <div className="w-[50%]">
-            <Logo></Logo>
+            <Link to="/">
+              <Logo></Logo>
+            </Link>
           </div>
           <div className="w-[50%]">
             <ShcarceWithCart />

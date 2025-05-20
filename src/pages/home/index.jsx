@@ -1,9 +1,15 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import Banner from './components/Banner';
+import SoupportSection from './components/souportSction';
 
 const HomePage = () => {
-  const { t } = useTranslation();
-  return <div>{t('jakaria')}</div>;
+  return (
+    <div>
+      <div className="container">
+        <Banner></Banner>
+        <SoupportSection></SoupportSection>
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;

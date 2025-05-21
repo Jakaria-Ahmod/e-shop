@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import Featured from './components/Featured';
 import SoupportSection from './components/souportSction';
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
       <div className="container">
         <Banner></Banner>
         <SoupportSection></SoupportSection>
+        <Featured></Featured>
       </div>
     </div>
   );

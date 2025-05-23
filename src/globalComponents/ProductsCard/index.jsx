@@ -1,8 +1,9 @@
-import React from 'react';
 import RatingStars from '../../utility/Rating';
 import { getDinscoutPirce } from '../../utility/getDiscountAndPrice';
 import { Tooltip } from 'antd';
-// import prodactImg from '../../assets/img/productImg.png';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { FaRegHeart } from 'react-icons/fa';
+import { CiShare2 } from 'react-icons/ci';
 
 const ProductCard = ({
   prodacutImg,
@@ -14,10 +15,27 @@ const ProductCard = ({
   pDiscount,
 }) => {
   return (
-    <div className="mt-[80px] group transition ease-linear">
-      <div className="p-[24px] border cursor-pointer border-white transition hover:border-[#b9b2b2] rounded-md w-[284px]">
+    <div className="mt-[80px] group transition ease-linear group ">
+      <div className="p-[24px]  cursor-pointer border border-white transition hover:border-[#b9b2b2] rounded-md w-[284px]">
         <div className="overflow-hidden">
           <img src={prodacutImg} alt="" />
+        </div>
+
+        <div className="relative hidden group-hover:block">
+          <div className="flex items-center gap-x-[18px] justify-center absolute -top-[58px]  w-full">
+            <AiOutlineShoppingCart
+              size={10}
+              className="rounded-full p-2 w-[40px] h-[40px] border flex items-center justify-center cursor-pointer hover:text-white hover:bg-primary border-primary text-primary  transition-all ease-linear bg-white"
+            />
+            <FaRegHeart
+              size={10}
+              className="rounded-full p-2 w-[40px] h-[40px] border flex items-center justify-center cursor-pointer hover:text-white hover:bg-primary border-primary text-primary transition-all ease-linear bg-white"
+            />
+            <CiShare2
+              size={10}
+              className="rounded-full p-2 w-[40px] h-[40px] border flex items-center justify-center cursor-pointer hover:text-white hover:bg-primary border-primary text-primary  transition-all ease-linear bg-white"
+            />
+          </div>
         </div>
         <div className="relative">
           {pDiscount && (

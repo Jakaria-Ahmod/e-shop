@@ -63,6 +63,10 @@ function App() {
           path: '/productdetail',
           element: <ProductDetail></ProductDetail>,
         },
+        {
+          path: '*',
+          element: <div>not route</div>,
+        },
       ],
     },
   ]);

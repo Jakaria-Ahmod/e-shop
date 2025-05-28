@@ -1,9 +1,9 @@
 import Banner from './components/Banner';
 import Featured from './components/Featured';
-import PrevButton from './components/Featured/PrevButton';
 import NewProdact from './components/new_Products';
 import Overview from './components/overview';
 import SoupportSection from './components/souportSction';
+import SpringMain from './components/Spring';
 
 const HomePage = () => {
   return (
@@ -15,6 +15,7 @@ const HomePage = () => {
         <Overview></Overview>
         <NewProdact></NewProdact>
       </div>
+      <SpringMain></SpringMain>
     </div>
   );
 };

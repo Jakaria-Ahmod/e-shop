@@ -5,6 +5,7 @@ import ProdactCategore from './ProdactCategore';
 import { IoIosArrowDown } from 'react-icons/io';
 import { featuredProductApi } from '../Featured/featuredApi';
 import ProductCard from '../../../../globalComponents/ProductsCard';
+import { useTranslation } from 'react-i18next';
 
 const NewProdact = () => {
   const [cardItems, setCardItems] = useState(5);
@@ -12,15 +13,16 @@ const NewProdact = () => {
   const uptadeCardItemsValue = () => {
     setCardItems(prev => prev + 5);
   };
+  const { t } = useTranslation();
 
   return (
     <section>
       <div>
-        <div className="mt-[80px]">
+        <div className="mt-[80px] mb-[80px]">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-colorFour font-poppins text-[36px] font-semibold leading-[46px]">
-                New Products
+                {t('New Products')}
               </h3>
             </div>
             <div className="flex items-center">

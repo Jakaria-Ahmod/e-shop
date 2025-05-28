@@ -2,9 +2,9 @@ import { Link } from 'react-router';
 import ProductCard from '../../../../globalComponents/ProductsCard';
 import { featuredProductApi } from './featuredApi';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import PrevButton from './PrevButton';
-import NextButton from './NextButton';
 import { Navigation } from 'swiper/modules';
+import PrevButton from '../../../../globalComponents/PrevButton';
+import NextButton from '../../../../globalComponents/NextButton';
 
 const Featured = () => {
   return (

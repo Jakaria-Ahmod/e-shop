@@ -1,5 +1,7 @@
 import Banner from './components/Banner';
+import BestSellerSection from './components/BestSeller';
 import Featured from './components/Featured';
+import FaqSection from './components/FQA';
 import NewProdact from './components/new_Products';
 import Overview from './components/overview';
 import SoupportSection from './components/souportSction';
@@ -16,6 +18,10 @@ const HomePage = () => {
         <NewProdact></NewProdact>
       </div>
       <SpringMain></SpringMain>
+      <div className="container">
+        <BestSellerSection></BestSellerSection>
+      </div>
+      <FaqSection></FaqSection>
     </div>
   );
 };

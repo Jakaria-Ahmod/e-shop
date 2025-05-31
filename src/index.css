@@ -28,3 +28,62 @@
 .coustom-select .ant-select-selector {
   border: none !important;
 }
+
+.coustom-collapse {
+  background-color: white !important;
+  border: none !important;
+}
+.coustom-collapse .ant-collapse-content-box {
+  border: none !important;
+}
+.ant-collapse .ant-collapse-content {
+  border-top: none !important;
+}
+
+.ant-collapse-expand-icon {
+  background-color: #ff624c !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 100%;
+  justify-content: center;
+}
+
+.ant-collapse-header .ant-collapse-expand-icon {
+  padding-inline-end: 0px;
+  color: white !important;
+}
+
+.ant-collapse-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 32px !important;
+}
+
+.ant-collapse-item {
+  border-bottom: none !important;
+}
+.ant-collapse-header .ant-collapse-expand-icon {
+  padding-inline-end: 0px !important;
+}
+
+.coustom-collapse
+  .ant-collapse-header[aria-expanded='true']
+  .ant-collapse-expand-icon {
+  background: none !important;
+  border: 1px solid #ff624c;
+}
+
+.coustom-collapse
+  .ant-collapse-header[aria-expanded='true']
+  .ant-collapse-expand-icon
+  span {
+  color: #ff624c;
+}
+
+.item_item {
+  margin-bottom: 24px !important;
+}
+.item_item:last-child {
+  margin-bottom: 0px !important;
+}

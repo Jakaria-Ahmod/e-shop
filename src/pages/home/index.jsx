@@ -6,6 +6,7 @@ import NewProdact from './components/new_Products';
 import Overview from './components/overview';
 import SoupportSection from './components/souportSction';
 import SpringMain from './components/Spring';
+import TechTalkSection from './components/TechTalk';
 
 const HomePage = () => {
   return (
@@ -22,6 +23,9 @@ const HomePage = () => {
         <BestSellerSection></BestSellerSection>
       </div>
       <FaqSection></FaqSection>
+      <div className="container">
+        <TechTalkSection></TechTalkSection>
+      </div>
     </div>
   );
 };

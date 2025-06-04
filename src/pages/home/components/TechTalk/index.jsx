@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import BlogCard from '../../../../globalComponents/BlogCard';
 import { TechTalksData } from './TechTalkApi';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const TechTalkSection = () => {
   const { t } = useTranslation();
@@ -44,16 +45,30 @@ const TechTalkSection = () => {
           </div>
         </section>
       </div>
-      <div className="grid grid-cols-3 justify-center gap-x-[48px]">
-        {TechTalksData?.map(item => (
-          <BlogCard
-            image={item?.image}
-            title={item?.title}
-            category={item?.category}
-            postedBy={item?.postedBy}
-            date={item?.date}
-          ></BlogCard>
-        ))}
+      <div>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => {}}
+          onSwiper={() => {}}
+          // modules={[Navigation]}
+          // navigation={{
+          //   nextEl: '.swiper-button-next',
+          //   prevEl: '.swiper-button-prev',
+          // }}
+        >
+          {TechTalksData?.map(item => (
+            <SwiperSlide>
+              <BlogCard
+                image={item?.image}
+                title={item?.title}
+                category={item?.category}
+                postedBy={item?.postedBy}
+                date={item?.date}
+              ></BlogCard>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   );

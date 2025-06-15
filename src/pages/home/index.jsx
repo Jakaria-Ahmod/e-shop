@@ -1,5 +1,6 @@
 import Banner from './components/Banner';
 import BestSellerSection from './components/BestSeller';
+import Companeys from './components/companey';
 import Featured from './components/Featured';
 import FaqSection from './components/FQA';
 import NewProdact from './components/new_Products';
@@ -7,6 +8,7 @@ import Overview from './components/overview';
 import SoupportSection from './components/souportSction';
 import SpringMain from './components/Spring';
 import TechTalkSection from './components/TechTalk';
+import UptadesIndex from './components/uptades';
 
 const HomePage = () => {
   return (
@@ -25,6 +27,8 @@ const HomePage = () => {
       <FaqSection></FaqSection>
       <div className="container">
         <TechTalkSection></TechTalkSection>
+        <Companeys></Companeys>
+        <UptadesIndex></UptadesIndex>
       </div>
     </div>
   );

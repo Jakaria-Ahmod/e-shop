@@ -1,11 +1,6 @@
 import React, { Children } from 'react';
 
-const CommonButton = ({
-  children,
-  loading = false,
-  onclick,
-  disabled = false,
-}) => {
+const CommonButton = ({ children, loading = false, onclick, disabled }) => {
   return (
     <div>
       <button

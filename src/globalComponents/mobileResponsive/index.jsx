@@ -5,9 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { CiSearch, CiUser } from 'react-icons/ci';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import CoustomDrawer from '../coustomDrawer';
-import MobileitemLlist from './mobileitemLlist';
+import MobileitemLlist from './MobileitemLlist';
 import SosalCourncy from '../HeaderComponents/topBar/SosalCourncy';
-import ShcarceWithCart from '../HeaderComponents/middleBar/ShcarceWithCart';
 import { IoCartOutline } from 'react-icons/io5';
 
 const MoblieResponsive = () => {

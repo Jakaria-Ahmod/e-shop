@@ -11,6 +11,8 @@ import pament3 from '../../../assets/payments/p3.png';
 import pament4 from '../../../assets/payments/p4.png';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div>
       <div className="container mt-[100px] mb-[80px]">
@@ -93,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="w-full h-[1px] bg-[#303030] opacity-25"></div>
         <div className="flex items-center justify-between mt-[12px]">
-          <span>Copyright © 2023 E-Shop. All Rights Reserved.</span>
+          <span>Copyright © {year} E-Shop. All Rights Reserved.</span>
           <div className="flex items-center gap-x-[14px]">
             <span className="font-montserrat text-[14px] font-normal leading-[20px] opacity-75">
               Privacy{' '}

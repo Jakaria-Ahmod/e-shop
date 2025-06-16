@@ -4,7 +4,7 @@ import UpdateLeft from './uptadesLayout/LeftSide';
 
 const UptadesIndex = () => {
   return (
-    <div className="gird grid-cols-[571px_1fr]">
+    <div className="gird grid-cols-[571px_1fr] mb-[80px]">
       <UpdateLeft></UpdateLeft>
       {/* <UpdateRight></UpdateRight> */}
     </div>

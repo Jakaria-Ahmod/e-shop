@@ -52,7 +52,7 @@ const SosalCourncy = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-end space-x-6">
+      <div className="flex items-center lg:justify-end gap-x-2 lg:space-x-6">
         <div>
           <Select
             defaultValue={handleOptionData[0].value}
@@ -73,9 +73,9 @@ const SosalCourncy = () => {
             className="coustom-select"
           />
         </div>
-        <div className="border border-l-colorFour opacity-25 h-[32px] "></div>
+        <div className="border border-l-colorFour opacity-25 h-[32px] hidden lg:block"></div>
 
-        <div>
+        <div className="hidden lg:block">
           <div className="flex items-center space-x-[24px]">
             <Link to="https://web.facebook.com/people/Md-Jakaria-Ahmod/pfbid02SQtretQtReHKq7h6EDA5h92vJ5xtJLDczrHZvuBKjz7u5QWyCxa4HXkMMBtTJCuPl/">
               <FaFacebookF size={16} />

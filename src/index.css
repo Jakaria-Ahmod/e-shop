@@ -87,3 +87,52 @@
 .item_item:last-child {
   margin-bottom: 0px !important;
 }
+
+@utility container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 550px;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1520px;
+    margin: 0px auto;
+  }
+}
+.coustom_drawer .ant-drawer-close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.coustom_drawer .ant-drawer-header {
+  border-bottom: none !important;
+}

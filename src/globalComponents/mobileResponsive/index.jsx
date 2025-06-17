@@ -14,7 +14,7 @@ const MoblieResponsive = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="p-2 mt-2">
+      <div className="p-2 mt-2 container">
         <div className="flex gap-x-[15px] justify-between items-center">
           <div>
             <Link to="/">

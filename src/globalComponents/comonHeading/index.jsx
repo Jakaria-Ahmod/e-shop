@@ -6,7 +6,7 @@ const CommonHeding = () => {
     <div className="container lg:p-3">
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-colorFour font-poppins text-lg lg:text-[36px] font-semibold leading-[46px]">
+          <h3 className="text-colorFour font-poppins text-base lg:text-[36px] font-semibold leading-[46px]">
             Featured Products
           </h3>
         </div>

@@ -19,13 +19,13 @@ const NewProdact = () => {
     <section>
       <div className="container">
         <div className="mt-[80px] mb-[80px] p-5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center flex-col justify-center md:flex-row md:justify-between">
             <div className="w-[50%]">
-              <h3 className="text-colorFour font-poppins text-lg lg:text-[36px] font-semibold leading-[46px]">
+              <h3 className="text-colorFour font-poppins text-[20px] lg:text-[36px] font-semibold leading-[46px]">
                 {t('New Products')}
               </h3>
             </div>
-            <div className="flex items-center w-[50%] justify-end">
+            <div className="flex items-center w-[50%] justify-center md:justify-end">
               <p className="hidden lg:block">Sort by</p>
               <ProdactCategore></ProdactCategore>
             </div>

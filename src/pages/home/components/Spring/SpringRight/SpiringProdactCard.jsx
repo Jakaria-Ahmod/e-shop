@@ -42,7 +42,7 @@ const SpiringProdactCard = ({
         {pDiscount && (
           <div className="relative">
             <div className=" bg-primary sm:w-[50px] sm:h-[50px] lg:w-[100px] lg:h-[100px] rounded-full flex items-center justify-center absolute lg:-top-[410px] sm:-top-[300px] sm:-right-6 lg:right-1">
-              <span className="text-white font-montserrat text-base font-bold leading-[24px] py-[8px] px-[20px]">
+              <span className="text-white font-montserrat text-base hidden sm:block font-bold leading-[24px] py-[8px] px-[20px]">
                 {pDiscount}%
               </span>
             </div>

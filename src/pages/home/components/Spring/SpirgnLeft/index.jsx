@@ -10,7 +10,7 @@ const SpirngLeft = () => {
   return (
     <div>
       <div>
-        <h3 className="font-poppins md:text-3xl lg:text-[50px] xl:text-[56px] font-bold leading-[68px]">
+        <h3 className="font-poppins text-2xl md:text-3xl lg:text-[50px] xl:text-[56px] font-bold leading-[68px]">
           {t('Spring Sale')}
         </h3>
         <Countdown

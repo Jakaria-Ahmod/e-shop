@@ -37,18 +37,18 @@ const SpringRight = () => {
             spaceBetween: 15,
           },
           768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           991: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1280: {
-            slidesPerView: 2,
+          1024: {
+            slidesPerView: 1,
             spaceBetween: 20,
           },
-          1536: {
+          1300: {
             slidesPerView: 2,
             spaceBetween: 20,
           },

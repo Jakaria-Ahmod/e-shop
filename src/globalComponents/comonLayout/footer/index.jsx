@@ -15,13 +15,13 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="container mt-[100px] mb-[80px]">
+      <div className="container mt-[100px] mb-[80px] p-5">
         <div className="flex flex-col lg:flex-row min-h-[405px] gap-x-[167px]">
           <div className="lg:w-[550px] mb-[20px] lg:mb-0">
             <div>
               <img src={FooterLogo} alt="img" />
             </div>
-            <div className="lg:mt-[158px]">
+            <div className=" md:mt-5 lg:mt-[158px]">
               <div className="flex items-center gap-x-[12px] mb-[12px]">
                 <MdPhone color="#303030" className="opacity-50" />
                 <span className="font-montserrat text-base font-normal leading-[24px] text-colorFour">
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full h-full">
-            <div className="grid grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-2 md:grid-cols-4">
               {FooterListData.map(Item => (
                 <div key={Item}>
                   <h3 className="text-colorFour font-poppins text-xl font-semibold leading-[30px]">
@@ -67,11 +67,19 @@ const Footer = () => {
                 <h3 className="text-colorFour font-poppins text-xl font-semibold leading-[30px]">
                   Payments
                 </h3>
-                <div className="flex items-center gap-x-[10px] lg:gap-x-[32px] mt-[25px] mb-[74px]">
-                  <img src={pament1} alt="payments" />
-                  <img src={pament2} alt="payments" />
-                  <img src={pament3} alt="payments" />
-                  <img src={pament4} alt="payments" />
+                <div className="flex items-center lg:gap-x-[10px] gap-x-[10px] xl:gap-x-[32px] mt-[25px] mb-[74px] xl:flex-col xl:gap-y-[30px] xl:items-start">
+                  <div>
+                    <img src={pament1} alt="payments" />
+                  </div>
+                  <div>
+                    <img src={pament2} alt="payments" />
+                  </div>
+                  <div>
+                    <img src={pament3} alt="payments" />
+                  </div>
+                  <div>
+                    <img src={pament4} alt="payments" />
+                  </div>
                 </div>
                 <div>
                   <h3 className="text-colorFour font-poppins text-xl font-semibold block leading-[30px]">

@@ -34,11 +34,11 @@ const MoblieResponsive = () => {
             </div>
             <div>
               <div>
-                <div className="flex items-center justify-between w-[200px] border py-[5px] px-[15px] rounded">
+                <div className="flex items-center justify-between w-full sm:w-[300px] md:w-[400px] border-gray-400 border py-[5px] px-[15px] rounded">
                   <input
                     type="text"
                     placeholder={t('Search Products ...')}
-                    className="border-none outline-none"
+                    className="w-full border-none outline-none text-sm"
                   />
                   <Link className="relative">
                     <CiSearch className="absolute -top-[7px] right-[10px]" />

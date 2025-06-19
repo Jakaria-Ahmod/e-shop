@@ -18,6 +18,7 @@
   --color-colorNine: #283b82;
   --color-colorTen: #469bdb;
   --color-opcity: #303030;
+  --breakpoint-xxxl: 1300px;
 }
 
 @utility container {

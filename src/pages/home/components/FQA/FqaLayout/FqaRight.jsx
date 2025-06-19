@@ -5,7 +5,7 @@ const FqaRight = () => {
   return (
     <div className="self-end">
       <div>
-        <h2 className="font-poppins text-colorFour text-2xl lg:text-[36px] font-semibold leading-[46px] mb-6">
+        <h2 className="font-poppins text-colorFour text-3xl xl:text-[36px] font-semibold leading-[46px] mb-6 ">
           Frequently Asked Questions
         </h2>
         <p className="text-colorFour text-base lg:text-xl font-normal leading-[30px] font-montserrat mb-[64px]">

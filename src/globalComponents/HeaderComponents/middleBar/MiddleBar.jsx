@@ -7,7 +7,7 @@ const MiddleBar = () => {
   return (
     <div>
       <div className="container">
-        <div className="flex items-center py-[22px]">
+        <div className="flex items-center py-[22px] p-5">
           <div className="w-[50%]">
             <Link to="/">
               <Logo></Logo>

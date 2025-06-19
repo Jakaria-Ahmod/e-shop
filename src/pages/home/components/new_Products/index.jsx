@@ -18,7 +18,7 @@ const NewProdact = () => {
   return (
     <section>
       <div className="container">
-        <div className="mt-[80px] mb-[80px]">
+        <div className="mt-[80px] mb-[80px] p-5">
           <div className="flex items-center justify-between">
             <div className="w-[50%]">
               <h3 className="text-colorFour font-poppins text-lg lg:text-[36px] font-semibold leading-[46px]">
@@ -30,7 +30,7 @@ const NewProdact = () => {
               <ProdactCategore></ProdactCategore>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
             {featuredProductApi?.slice(0, cardItems).map(prodacut => (
               <ProductCard
                 key={prodacut?.id}

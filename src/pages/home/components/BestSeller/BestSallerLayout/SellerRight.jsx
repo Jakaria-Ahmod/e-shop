@@ -5,7 +5,7 @@ const SellerRight = () => {
   return (
     <div>
       <section>
-        <div className="lg:w-[544px] lg:h-[1086px]">
+        <div className="lg:w-[544px]  lg:h-[1086px]">
           <img
             src={bestSeller}
             alt="bestSeller"

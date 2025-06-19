@@ -8,10 +8,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const TechTalkSection = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <div className="pt-[80px] pb-[80px]">
+    <div className="p-5">
+      <div className="pt-[80px] pb-[80px] container">
         <section>
-          <div className="flex justify-between gap-x-[10px]">
+          <div className="flex justify-between">
             <div className="w-[80%]">
               <h3 className="text-colorFour font-poppins text-xl lg:text-[36px] font-semibold leading-[46px] mb-[24px]">
                 {t('Tech Talk')}
@@ -21,12 +21,12 @@ const TechTalkSection = () => {
                 from our experts.
               </p>
             </div>
-            <div className="self-end w-[20%] lg:w-0">
+            <div className="self-end w-[20%]">
               <Link className="flex items-center lg:gap-x-[16px]" to="/blog">
                 <p className="font-montserrat text-[12px] lg:text-base font-bold leading-[24px] text-primary hover:pr-2">
                   View All
                 </p>
-                <p>
+                <p className="hidden sm:block">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="29"
@@ -92,7 +92,7 @@ const TechTalkSection = () => {
           ))}
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 

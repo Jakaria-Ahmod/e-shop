@@ -8,10 +8,10 @@ const MenuBar = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bg-primary py-6">
+      <div className="bg-primary py-6 p-5">
         <div className="container">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-x-[80px]">
+            <div className="flex items-center lg:gap-x-[40px] xl:gap-x-[80px]">
               <Allgatagorey></Allgatagorey>
               <Link
                 to="product"

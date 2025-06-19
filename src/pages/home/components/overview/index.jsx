@@ -3,7 +3,7 @@ import overvieImgRight from '../../../../assets/img/overviewLeft.png';
 import overvieImgLeft from '../../../../assets/img/overviewRight.png';
 const Overview = () => {
   return (
-    <div className="mt-[80px]">
+    <div className="mt-[80px] xl:p-5">
       <div className="container">
         <div className="flex gap-x-5">
           <div>

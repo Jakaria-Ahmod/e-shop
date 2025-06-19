@@ -30,7 +30,7 @@ const SpiringProdactCard = ({
 
   return (
     <div className="mt-[80px] group transition ease-linear group cursor-pointer">
-      <div className="p-[24px] w-[463px] h-[701px]  bg-gray-200  cursor-pointer transition rounded-md ">
+      <div className="p-[24px] sm:w-[300px] lg:w-[463px] sm:h-[600px] lg:h-[701px] bg-gray-200  cursor-pointer transition rounded-md ">
         <div className="overflow-hidden mb-[40px]">
           <img
             src={prodacutImg}
@@ -41,7 +41,7 @@ const SpiringProdactCard = ({
         {/* Discount badge */}
         {pDiscount && (
           <div className="relative">
-            <div className=" bg-primary w-[100px] h-[100px] rounded-full flex items-center justify-center absolute -top-[410px] right-1">
+            <div className=" bg-primary sm:w-[50px] sm:h-[50px] lg:w-[100px] lg:h-[100px] rounded-full flex items-center justify-center absolute lg:-top-[410px] sm:-top-[300px] sm:-right-6 lg:right-1">
               <span className="text-white font-montserrat text-base font-bold leading-[24px] py-[8px] px-[20px]">
                 {pDiscount}%
               </span>

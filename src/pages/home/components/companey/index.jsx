@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Companeys = () => {
   return (
-    <div className="mt-[103px] mb-[103px]">
+    <div className="mt-[103px] mb-[103px] p-5">
       <Swiper
         spaceBetween={200}
         slidesPerView={5}

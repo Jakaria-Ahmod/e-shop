@@ -10,7 +10,7 @@ import CommonHeding from '../../../../globalComponents/comonHeading';
 const Featured = () => {
   return (
     <div className="container">
-      <div className="mt-[80px]">
+      <div className="mt-[80px] p-7">
         <CommonHeding></CommonHeding>
         <div>
           <div className="relative">
@@ -43,14 +43,22 @@ const Featured = () => {
                 spaceBetween: 15,
               },
               768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              991: {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
-              1024: {
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1400: {
                 slidesPerView: 4,
                 spaceBetween: 20,
               },
-              1280: {
+              1500: {
                 slidesPerView: 5,
                 spaceBetween: 20,
               },

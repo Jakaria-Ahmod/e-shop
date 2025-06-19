@@ -6,7 +6,7 @@ const MenuBarRight = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="flex items-center gap-x-[80px]">
+      <div className="flex items-center lg:gap-x-[40px] xl:gap-x-[80px]">
         <Link className="font-montserrat text-base font-bold leading-[24px] text-white">
           {t('LIMITED SALE')} 👋🏻
         </Link>

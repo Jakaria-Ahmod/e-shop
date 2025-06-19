@@ -6,7 +6,7 @@ const HeaderTopBar = () => {
   return (
     <>
       <div className="container">
-        <div className="flex justify-between items-center py-[22px] ">
+        <div className="flex justify-between items-center py-[22px] p-5">
           <div>
             <NumberAndPhone />
           </div>

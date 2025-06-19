@@ -9,10 +9,10 @@ const FaqSection = () => {
         <div>
           <div className="pt-[64px] pb-[64px]">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-x-[112px]">
-              <div className="order-2">
+              <div className="order-2 lg:order-0">
                 <FqaLeft></FqaLeft>
               </div>
-              <div className="order-1">
+              <div className="order-1 lg:order-0">
                 <FqaRight></FqaRight>
               </div>
             </div>

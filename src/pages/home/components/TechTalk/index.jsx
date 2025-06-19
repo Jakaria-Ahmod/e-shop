@@ -70,11 +70,11 @@ const TechTalkSection = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             1280: {
-              slidesPerView: 5,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           }}

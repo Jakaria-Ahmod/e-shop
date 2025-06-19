@@ -1,4 +1,3 @@
-import React from 'react';
 import HeaderTopBar from './topBar';
 import MiddleBar from './middleBar/MiddleBar';
 import MenuBar from './menuBar';

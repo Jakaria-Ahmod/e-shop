@@ -15,10 +15,14 @@ const ProductCard = ({
   pDiscount,
 }) => {
   return (
-    <div className="mt-[80px] group transition ease-linear group ">
-      <div className="p-[24px]  cursor-pointer border border-white transition hover:border-[#b9b2b2] rounded-md w-[284px]">
-        <div className="overflow-hidden">
-          <img src={prodacutImg} alt="" />
+    <div className="mt-7 lg:mt-[80px] group transition ease-linear group">
+      <div className="p-[24px]  cursor-pointer border border-white transition hover:border-[#b9b2b2] rounded-md lg:w-[284px]">
+        <div className="w-full h-[214px] overflow-hidden rounded-md">
+          <img
+            src={prodacutImg}
+            alt=""
+            className="object-cover w-full h-full"
+          />
         </div>
 
         <div className="relative hidden group-hover:block">

@@ -11,19 +11,19 @@ const TechTalkSection = () => {
     <>
       <div className="pt-[80px] pb-[80px]">
         <section>
-          <div className="flex  justify-between">
-            <div>
-              <h3 className="text-colorFour font-poppins text-[36px] font-semibold leading-[46px] mb-[24px]">
+          <div className="flex justify-between gap-x-[10px]">
+            <div className="w-[80%]">
+              <h3 className="text-colorFour font-poppins text-xl lg:text-[36px] font-semibold leading-[46px] mb-[24px]">
                 {t('Tech Talk')}
               </h3>
-              <p className="text-colorFour font-montserrat font-normal leading-[30px] text-xl">
+              <p className="text-colorFour font-montserrat font-normal leading-[30px] text-[16px]  lg:text-xl">
                 Stay up to date with the latest trends, reviews, and insights
                 from our experts.
               </p>
             </div>
-            <div className="self-end">
-              <Link className="flex items-center gap-x-[16px]" to="/blog">
-                <p className="font-montserrat text-base font-bold leading-[24px] text-primary hover:pr-2">
+            <div className="self-end w-[20%] lg:w-0">
+              <Link className="flex items-center lg:gap-x-[16px]" to="/blog">
+                <p className="font-montserrat text-[12px] lg:text-base font-bold leading-[24px] text-primary hover:pr-2">
                   View All
                 </p>
                 <p>
@@ -56,6 +56,28 @@ const TechTalkSection = () => {
           //   nextEl: '.swiper-button-next',
           //   prevEl: '.swiper-button-prev',
           // }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
         >
           {TechTalksData?.map(item => (
             <SwiperSlide>

@@ -17,20 +17,20 @@ const NewProdact = () => {
 
   return (
     <section>
-      <div>
+      <div className="container">
         <div className="mt-[80px] mb-[80px]">
           <div className="flex items-center justify-between">
-            <div>
-              <h3 className="text-colorFour font-poppins text-[36px] font-semibold leading-[46px]">
+            <div className="w-[50%]">
+              <h3 className="text-colorFour font-poppins text-lg lg:text-[36px] font-semibold leading-[46px]">
                 {t('New Products')}
               </h3>
             </div>
-            <div className="flex items-center">
-              <p>Sort by</p>
+            <div className="flex items-center w-[50%] justify-end">
+              <p className="hidden lg:block">Sort by</p>
               <ProdactCategore></ProdactCategore>
             </div>
           </div>
-          <div className="grid grid-cols-5">
+          <div className="grid grid-cols-1 lg:grid-cols-5">
             {featuredProductApi?.slice(0, cardItems).map(prodacut => (
               <ProductCard
                 key={prodacut?.id}

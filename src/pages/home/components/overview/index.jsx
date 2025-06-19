@@ -6,16 +6,20 @@ const Overview = () => {
     <div className="mt-[80px]">
       <div className="container">
         <div className="flex gap-x-5">
-          <img
-            src={overvieImgLeft}
-            alt="img"
-            className="cursor-pointer w-full h-full object-cover"
-          />
-          <img
-            src={overvieImgRight}
-            alt="img"
-            className="cursor-pointer w-full h-full object-cover"
-          />
+          <div>
+            <img
+              src={overvieImgLeft}
+              alt="img"
+              className="cursor-pointer w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <img
+              src={overvieImgRight}
+              alt="img"
+              className="cursor-pointer w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

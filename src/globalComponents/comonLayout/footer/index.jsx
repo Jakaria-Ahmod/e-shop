@@ -16,12 +16,12 @@ const Footer = () => {
   return (
     <div>
       <div className="container mt-[100px] mb-[80px]">
-        <div className="flex min-h-[405px] gap-x-[167px]">
-          <div className="w-[550px]">
+        <div className="flex flex-col lg:flex-row min-h-[405px] gap-x-[167px]">
+          <div className="lg:w-[550px] mb-[20px] lg:mb-0">
             <div>
               <img src={FooterLogo} alt="img" />
             </div>
-            <div className="mt-[158px]">
+            <div className="lg:mt-[158px]">
               <div className="flex items-center gap-x-[12px] mb-[12px]">
                 <MdPhone color="#303030" className="opacity-50" />
                 <span className="font-montserrat text-base font-normal leading-[24px] text-colorFour">
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full h-full">
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4">
               {FooterListData.map(Item => (
                 <div key={Item}>
                   <h3 className="text-colorFour font-poppins text-xl font-semibold leading-[30px]">
@@ -67,7 +67,7 @@ const Footer = () => {
                 <h3 className="text-colorFour font-poppins text-xl font-semibold leading-[30px]">
                   Payments
                 </h3>
-                <div className="flex items-center gap-x-[32px] mt-[25px] mb-[74px]">
+                <div className="flex items-center gap-x-[10px] lg:gap-x-[32px] mt-[25px] mb-[74px]">
                   <img src={pament1} alt="payments" />
                   <img src={pament2} alt="payments" />
                   <img src={pament3} alt="payments" />
@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full h-[1px] bg-[#303030] opacity-25"></div>
-        <div className="flex items-center justify-between mt-[12px]">
+        <div className="flex flex-col lg:flex-row gap-y-[10px] lg:gap-y-0 items-center justify-between mt-[12px]">
           <span>Copyright © {year} E-Shop. All Rights Reserved.</span>
           <div className="flex items-center gap-x-[14px]">
             <span className="font-montserrat text-[14px] font-normal leading-[20px] opacity-75">

@@ -14,7 +14,7 @@ export default BlogCard;
 const BlogCardHome = ({ image, title, category, date }) => {
   return (
     <div className="border border-transparent group hover:border-[#B1A1A1] rounded-[25px] hover:border-opacity-20 transition-all duration-300">
-      <div className=" group-hover:p-[52px] transition-all duration-300">
+      <div className=" group-hover:lg:p-[52px] group-hover:p-[20px]  transition-all duration-300">
         <div className=" rounded-[25px] overflow-hidden transition-all duration-300">
           <img src={image} alt="img" className="w-full h-full object-cover" />
         </div>

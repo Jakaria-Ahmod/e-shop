@@ -19,20 +19,20 @@ const UpdateLeft = () => {
     setEmail('');
   };
   return (
-    <div className="h-[531px] w-full bg-linear-to-r from-white-500 to-gray-500 rounded-md overflow-hidden">
+    <div className="lg:h-[531px] w-full bg-linear-to-r from-white-500 to-gray-500 rounded-md overflow-hidden">
       <div>
-        <div className="w-[681px] h-full pl-[113px] pt-[113px] pb-[113px]">
+        <div className="w-[681px] h-full p-2 lg:pl-[113px] py-4 lg:pt-[113px] lg:pb-[113px]">
           <h3 className="text-colorFour font-poppins font-semibold leading-[46px] text-[36px]">
             Get Our Updates
           </h3>
-          <p className="text-colorFour font-montserrat text-2xl font-normal leading-[30px] mt-[16px] mb-[32px]">
+          <p className="text-colorFour font-montserrat text-base w-[400px] lg:w-[600px] lg:text-2xl font-normal leading-[30px] mt-[16px] mb-[32px]">
             Browse our wide selection of electronics and find the perfect promo
             for you from newsletter.
           </p>
           <form action="" onSubmit={handleClick}>
             <Input
               placeholder="Enter your email address ..."
-              className="!w-[466px] !p-[14px] mb-[!16px]"
+              className="lg:!w-[466px] !w-[300px] !p-[14px] mb-[!16px]"
               onChange={e => setEmail(e.target.value)}
               name="email"
               value={email}

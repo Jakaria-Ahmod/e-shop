@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const Banner = () => {
   return (
-    <div className="mt-8 w-[97%] mx-auto p-1">
+    <div className="!mt-8 w-[97%] mx-auto container">
       <Link to="/">
         {' '}
         <img

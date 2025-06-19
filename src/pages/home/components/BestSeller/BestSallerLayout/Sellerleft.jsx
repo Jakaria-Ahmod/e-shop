@@ -17,7 +17,7 @@ const Sellerleft = () => {
       <section>
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="text-colorFour font-poppins text-[36px] font-semibold leading-[46px]">
+            <h3 className="text-colorFour font-poppins text-lg lg:text-[36px] font-semibold leading-[46px]">
               {t('Best Seller')}
             </h3>
           </div>
@@ -44,7 +44,7 @@ const Sellerleft = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3 grid-cols-1">
           {topSellingProducts.map(product => (
             <ProductCard
               key={product.id}

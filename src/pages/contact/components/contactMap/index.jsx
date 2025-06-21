@@ -5,8 +5,16 @@ import 'leaflet/dist/leaflet.css';
 import { Link } from 'react-router';
 import mapImg from '../../../../assets/map/map.jpg';
 const position = [23.685, 90.3563];
+import L from 'leaflet';
+import mapMarkerImg from '../../../../assets/map/mapMarkar.jpg';
+import { Icon } from 'leaflet';
 
 const ContactMap = () => {
+  const customIcon = new Icon({
+    iconUrl: mapMarkerImg,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+  });
   return (
     <>
       <div>
@@ -22,7 +30,7 @@ const ContactMap = () => {
                 attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
-              <Marker position={position}>
+              <Marker position={position} icon={customIcon}>
                 <Popup>
                   A sample popup! <br /> Easily customizable.
                 </Popup>

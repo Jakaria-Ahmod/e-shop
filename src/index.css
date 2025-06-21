@@ -136,3 +136,24 @@
 .coustom_drawer .ant-drawer-header {
   border-bottom: none !important;
 }
+.leaflet-control-zoom {
+  position: relative !important;
+  bottom: -370px;
+  right: -1350px;
+  width: 88px;
+  height: 100px;
+}
+
+.leaflet-control-zoom-in {
+  border-radius: 5px;
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 30px !important;
+}
+
+.leaflet-control-zoom-out {
+  border-radius: 5px;
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 30px !important;
+}

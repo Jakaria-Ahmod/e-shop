@@ -16,7 +16,7 @@ const ProductCard = ({
   pDiscount,
 }) => {
   return (
-    <div className="mt-7 lg:mt-[80px] group transition ease-linear group bg-amber-600 w-[284px] overflow-hidden rounded-md">
+    <div className="mt-7 lg:mt-[80px] group transition ease-linear group w-[284px] overflow-hidden rounded-md">
       <div className="p-[24px]  cursor-pointer border border-white transition hover:border-[#b9b2b2] rounded-md lg:w-[284px]">
         <div className="w-full h-[214px] overflow-hidden rounded-md">
           <img

@@ -60,6 +60,10 @@ function App() {
           element: <Product></Product>,
         },
         {
+          path: '/product/:id',
+          element: <ProductDetail></ProductDetail>,
+        },
+        {
           path: '/productdetail',
           element: <ProductDetail></ProductDetail>,
         },

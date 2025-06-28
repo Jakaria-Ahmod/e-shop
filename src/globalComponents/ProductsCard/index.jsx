@@ -4,6 +4,7 @@ import { Tooltip } from 'antd';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { FaRegHeart } from 'react-icons/fa';
 import { CiShare2 } from 'react-icons/ci';
+import { Link } from 'react-router';
 
 const ProductCard = ({
   prodacutImg,
@@ -58,9 +59,12 @@ const ProductCard = ({
         {prodactPName.length > 20 ? (
           <Tooltip title={prodactPName}>
             <div>
-              <h3 className="text-colorFour font-poppins text-xl font-semibold leading-[30px] mt-[16px] mb-[8px] group-hover:text-primary cursor-pointer">
+              <Link
+                to={`/product/${prodactName}`}
+                className="text-colorFour font-poppins text-xl font-semibold leading-[30px] mt-[16px] mb-[8px] group-hover:text-primary cursor-pointer"
+              >
                 {prodactPName.slice(0, 38)}...
-              </h3>
+              </Link>
             </div>
           </Tooltip>
         ) : (

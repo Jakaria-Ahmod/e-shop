@@ -18,7 +18,7 @@ const ProductListCard = ({
     <div className="group transition-all ease-linear">
       <div
         className="p-4 border border-white hover:border-[#b9b2b2] mt-[46px] rounded-md cursor-pointer 
-        w-full lg:w-full h-[200px] flex flex-col justify-between"
+         lg:w-full w-[400px] h-[250px] lg:h-[200px] flex flex-col justify-between"
       >
         {/* Image */}
         <div className="flex gap-2.5">

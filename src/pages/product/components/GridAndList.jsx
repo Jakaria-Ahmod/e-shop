@@ -12,7 +12,7 @@ const GridAndList = () => {
   const viewType = useSelector(state => state.view.viewType);
   return (
     <div>
-      <div className="flex gap-x-[12px] items-center">
+      <div className="flex gap-x-[12px] items-center ">
         <IoGridOutline
           className="cursor-pointer hover:bg-primary"
           size={24}

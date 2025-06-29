@@ -68,25 +68,27 @@ const AllProduct = () => {
         {selectedProducts.map((item, index) =>
           viewType === 'grid' ? (
             <ProductCard
-              key={index}
-              prodacutImg={item?.img}
-              prodactName={item?.name}
+              key={item?.id}
+              prodacutImg={item?.image}
+              prodactName={item?.pCategory}
               prodactPName={item?.pName}
               ratings={item?.ratings}
-              ratingsCount={item?.ratingsCount}
-              pPrice={item?.pPrice}
-              pDiscount={item?.pDiscount}
+              ratingsCount={item?.totalRatings}
+              pPrice={item?.price}
+              pDiscount={item?.discount}
+              id={item.id}
             />
           ) : (
             <ProductListCard
-              key={index}
-              prodacutImg={item?.img}
-              prodactName={item?.name}
+              key={item?.id}
+              prodacutImg={item?.image}
+              prodactName={item?.pCategory}
               prodactPName={item?.pName}
               ratings={item?.ratings}
-              ratingsCount={item?.ratingsCount}
-              pPrice={item?.pPrice}
-              pDiscount={item?.pDiscount}
+              ratingsCount={item?.totalRatings}
+              pPrice={item?.price}
+              pDiscount={item?.discount}
+              id={item.id}
             />
           )
         )}

@@ -14,6 +14,7 @@ const ProductCard = ({
   ratingsCount,
   pPrice,
   pDiscount,
+  id,
 }) => {
   return (
     <div className="mt-7 lg:mt-[80px] group transition ease-linear group w-[284px] overflow-hidden rounded-md">
@@ -60,7 +61,7 @@ const ProductCard = ({
           <Tooltip title={prodactPName}>
             <div>
               <Link
-                to={`/product/${prodactName}`}
+                to={`/product/${id}`}
                 className="text-colorFour font-poppins text-xl font-semibold leading-[30px] mt-[16px] mb-[8px] group-hover:text-primary cursor-pointer"
               >
                 {prodactPName.slice(0, 38)}...

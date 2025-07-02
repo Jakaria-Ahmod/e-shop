@@ -2,10 +2,10 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html",
-      "build": {
-        "installCommand": "npm install --legacy-peer-deps"
-      }
+      "destination": "/index.html"
     }
-  ]
+  ],
+  "build": {
+    "installCommand": "npm install --legacy-peer-deps"
+  }
 }

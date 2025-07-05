@@ -14,8 +14,15 @@ export const countSlice = createSlice({
         state.count -= 1;
       }
     },
+    setCoutReset: state => {
+      state.count = 1;
+    },
+    setCounterValue: (state, action) => {
+      state.count = action.payload;
+    },
   },
 });
 
-export const { InCrement, DeCrement } = countSlice.actions;
+export const { InCrement, DeCrement, setCoutReset, setCounterValue } =
+  countSlice.actions;
 export default countSlice.reducer;

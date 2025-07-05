@@ -1,15 +1,25 @@
-import React from 'react';
 import { FiMinus } from 'react-icons/fi';
 import { GoPlus } from 'react-icons/go';
 import CommonButton from '../../globalComponents/comonButton';
 import { GiShoppingCart } from 'react-icons/gi';
 import { useDispatch, useSelector } from 'react-redux';
-import { DeCrement, InCrement } from '../../service/redux/features/countSlice';
-import { Link } from 'react-router';
+import {
+  DeCrement,
+  InCrement,
+  setCounterValue,
+} from '../../service/redux/features/countSlice';
+import { useNavigate } from 'react-router'; // ✅ Correct Hook
+import { addCart } from '../../service/redux/features/cartSlice';
 
-const BuyAndCount = () => {
+const BuyAndCount = ({ data }) => {
   const dispatch = useDispatch();
   const count = useSelector(state => state.count.count);
+  const navigate = useNavigate(); // ✅ Correct Hook
+
+  const handleAddToCardAndRedirect = () => {
+    dispatch(addCart({ product: data, qty: count })); // ✅ fixed qty
+    navigate('/cart'); // ✅ redirect to cart
+  };
 
   return (
     <div>
@@ -33,10 +43,11 @@ const BuyAndCount = () => {
         </div>
         <div className="flex gap-x-[16px]">
           <CommonButton>Buy Now</CommonButton>
-          <button className="w-[62px] h-[58px] border border-primary rounded-md flex items-center justify-center cursor-pointer">
-            <Link to="/cart">
-              <GiShoppingCart size={28} className="text-primary" />
-            </Link>
+          <button
+            onClick={handleAddToCardAndRedirect}
+            className="w-[62px] h-[58px] border border-primary rounded-md flex items-center justify-center cursor-pointer"
+          >
+            <GiShoppingCart size={28} className="text-primary" />
           </button>
         </div>
       </div>

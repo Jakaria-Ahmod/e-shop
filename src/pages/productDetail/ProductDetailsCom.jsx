@@ -1,6 +1,4 @@
-import React from 'react';
 import RatingStars from '../../utility/Rating';
-import { Tooltip } from 'antd';
 import { Link } from 'react-router';
 import { getDinscoutPirce } from '../../utility/getDiscountAndPrice';
 
@@ -16,8 +14,6 @@ const ProductDetailsCom = ({
   delivery,
   variant,
 }) => {
-  console.log(variant);
-
   return (
     <div>
       <div>

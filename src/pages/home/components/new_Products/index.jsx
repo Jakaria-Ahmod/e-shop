@@ -33,14 +33,14 @@ const NewProdact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
             {featuredProductApi?.slice(0, cardItems).map(prodacut => (
               <ProductCard
-                key={prodacut?.id}
-                prodacutImg={prodacut?.img}
-                prodactName={prodacut?.name}
+                // ratings={prodacut?.ratings}
+                prodacutImg={prodacut?.image}
+                prodactName={prodacut?.brand}
                 prodactPName={prodacut?.pName}
                 ratings={prodacut?.ratings}
-                ratingsCount={prodacut?.ratingsCount}
-                pPrice={prodacut?.pPrice}
-                pDiscount={prodacut?.pDiscount}
+                ratingsCount={prodacut?.totalRatings}
+                pPrice={prodacut?.price}
+                pDiscount={prodacut?.discount}
               ></ProductCard>
             ))}
           </div>

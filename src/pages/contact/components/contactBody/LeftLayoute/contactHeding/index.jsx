@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 const ContactHeding = () => {
   const { pathname } = useLocation();
@@ -10,7 +10,7 @@ const ContactHeding = () => {
       <div>
         <div className="flex gap-3.5">
           <span className="text-colorFour font-montserrat text-base font-normal leading-[24px]">
-            Home
+            <Link to="/">Home</Link>
           </span>{' '}
           |{' '}
           <span className="text-colorFour font-montserrat text-base font-bold leading-[24px]">

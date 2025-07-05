@@ -1,16 +1,18 @@
 import React from 'react';
 import { featuredProductApi } from '../home/components/Featured/featuredApi';
-import { useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import ProductImg from './ProductImg';
 import ProductDetailsCom from './ProductDetailsCom';
 import BuyNowAndCout from './BuyNowAndCout';
 import BuyAndCount from './BuyAndCount';
+import Description from './Description';
+import RelatetProduct from './RelatetProduct';
+import CTA from '../../assets/img/CTA.png';
 
 const ProductDetail = () => {
   const { pathname } = useLocation();
   const id = pathname.split('/').slice(1)[1];
   const data = featuredProductApi.find(item => item.id == id);
-  console.log(data);
 
   const {
     pCategory,
@@ -25,8 +27,12 @@ const ProductDetail = () => {
     weight,
     delivery,
     variant,
+    description,
   } = data;
-  console.log(weight, delivery);
+
+  const relatetProduct = featuredProductApi.filter(
+    item => item.pCategory === data.pCategory && item.id !== data.id
+  );
 
   return (
     <div className="container">
@@ -34,7 +40,7 @@ const ProductDetail = () => {
         <div className="flex items-center gap-x-[16px] mt-[64px] mb-[48px]">
           <div className="flex items-center gap-x-[15px]">
             <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
-              Home
+              <Link to="/">Home</Link>
             </span>
             <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
               |
@@ -78,6 +84,17 @@ const ProductDetail = () => {
             <BuyNowAndCout></BuyNowAndCout>
           </div>
           <BuyAndCount></BuyAndCount>
+        </div>
+        <div>
+          <Description description={description}></Description>
+        </div>
+        <div>
+          <RelatetProduct relatetProduct={relatetProduct}></RelatetProduct>
+        </div>
+        <div className="w-[1520px] h-[531px] bg-amber-300 mt-[64px] rounded-[25px] overflow-hidden">
+          <Link to="/product">
+            <img src={CTA} alt="" className="w-full h-full object-cover" />
+          </Link>
         </div>
       </div>
     </div>

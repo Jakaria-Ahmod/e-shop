@@ -5,6 +5,7 @@ import CommonButton from '../../globalComponents/comonButton';
 import { GiShoppingCart } from 'react-icons/gi';
 import { useDispatch, useSelector } from 'react-redux';
 import { DeCrement, InCrement } from '../../service/redux/features/countSlice';
+import { Link } from 'react-router';
 
 const BuyAndCount = () => {
   const dispatch = useDispatch();
@@ -33,7 +34,9 @@ const BuyAndCount = () => {
         <div className="flex gap-x-[16px]">
           <CommonButton>Buy Now</CommonButton>
           <button className="w-[62px] h-[58px] border border-primary rounded-md flex items-center justify-center cursor-pointer">
-            <GiShoppingCart size={28} className="text-primary" />
+            <Link to="/cart">
+              <GiShoppingCart size={28} className="text-primary" />
+            </Link>
           </button>
         </div>
       </div>

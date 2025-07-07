@@ -62,35 +62,35 @@ const ProductDetail = () => {
   return (
     <div className="container">
       <div className="mb-[50px]">
-        <div className="flex items-center gap-x-[16px] mt-[64px] mb-[48px]">
+        <div className="flex items-center gap-x-[16px] lg:mt-[64px] mt-6 mb-6 lg:mb-[48px]">
           <div className="flex items-center gap-x-[15px]">
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               <Link to="/">Home</Link>
             </span>
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               |
             </span>
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               {pCategory}
             </span>
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               |
             </span>
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               {brand}
             </span>
-            <span className="font-montserrat text-colorFour text-base font-normal leading-[24px]">
+            <span className="font-montserrat text-colorFour text-[14px] lg:text-base font-normal leading-[24px]">
               |
             </span>
           </div>
-          <span className="font-montserrat text-colorFour text-base font-bold leading-[24px]">
+          <span className="font-montserrat  text-colorFour text-[14px] lg:text-base font-bold leading-[24px]">
             {pName}
           </span>
         </div>
 
-        <div className="grid grid-cols-[1.5fr_1fr]">
+        <div className="grid xl:grid-cols-[1.5fr_1fr]">
           <ProductImg image={image} />
-          <div>
+          <div className="mt-6">
             <ProductDetailsCom
               ratings={ratings}
               totalRatings={totalRatings}
@@ -106,7 +106,7 @@ const ProductDetail = () => {
           </div>
         </div>
 
-        <div className="flex gap-x-[110px] items-center mt-[73px] justify-between">
+        <div className="flex flex-wrap gap-x-[110px] items-center mt-[73px] justify-between">
           <div className="w-[780px]">
             <BuyNowAndCout />
           </div>
@@ -120,7 +120,7 @@ const ProductDetail = () => {
           <RelatetProduct relatetProduct={relatetProduct} />
         </div>
 
-        <div className="w-[1520px] h-[531px] bg-amber-300 mt-[64px] rounded-[25px] overflow-hidden">
+        <div className="xl:w-[1520px] xl:h-[531px] bg-amber-300 mt-[64px] rounded-[25px] overflow-hidden">
           <Link to="/product">
             <img src={CTA} alt="" className="w-full h-full object-cover" />
           </Link>

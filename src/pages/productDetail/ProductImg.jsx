@@ -6,7 +6,7 @@ const ProductImg = ({ image }) => {
   return (
     <div>
       <div>
-        <div className="w-[833px] h-[541px] rounded-[25px] cursor-pointer border border-gray-400 flex items-center justify-center">
+        <div className="lg:w-[833px] lg:h-[541px] rounded-[25px] cursor-pointer border border-gray-400 flex items-center justify-center">
           <Zoom>
             <img alt="Zoom" src={image} width="500" className="rounded-lg" />
           </Zoom>

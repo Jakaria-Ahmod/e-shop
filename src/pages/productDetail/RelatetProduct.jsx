@@ -37,7 +37,7 @@ const RelatetProduct = ({ relatetProduct }) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-5">
+      <div className="grid lg:grid-cols-3 xl:grid-cols-5 justify-center">
         {relatetProduct.map(item => (
           <div>
             <ProductCard

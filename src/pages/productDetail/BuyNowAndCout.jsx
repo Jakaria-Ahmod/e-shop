@@ -4,7 +4,7 @@ import { souportSectionData } from '../home/components/souportSction/soupportApi
 const BuyNowAndCout = () => {
   return (
     <div className="]">
-      <div className="flex gap-x-[30px]">
+      <div className="flex flex-wrap gap-x-[30px]">
         {souportSectionData?.slice(1, 4).map((item, index) => {
           const Icon = item?.icon;
           return (

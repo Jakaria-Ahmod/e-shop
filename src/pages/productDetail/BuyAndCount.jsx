@@ -23,8 +23,8 @@ const BuyAndCount = ({ data }) => {
 
   return (
     <div>
-      <div className="flex gap-x-[84px]">
-        <div className="flex items-center gap-x-[65px]">
+      <div className="flex gap-x-5 lg:gap-x-[84px] mt-8">
+        <div className="flex items-center gap-x-[10px] lg:gap-x-[65px]">
           <div
             className="w-[56px] h-[56px] rounded-full cursor-pointer hover:bg-[#F4F4F4] flex items-center justify-center"
             onClick={() => dispatch(DeCrement())}

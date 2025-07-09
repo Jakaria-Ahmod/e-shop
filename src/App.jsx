@@ -44,7 +44,7 @@ function App() {
           element: <Blog></Blog>,
         },
         {
-          path: '/blogdetail',
+          path: '/blogdetail/:id',
           element: <BlogDetail></BlogDetail>,
         },
         {

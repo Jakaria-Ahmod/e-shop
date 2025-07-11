@@ -46,7 +46,7 @@ const BlogCardHome = ({ image, title, category, date }) => {
 const BlogCardBlog = ({ id, category, BlogTitle, img, user, Date }) => {
   return (
     <div>
-      <div className="w-[432px] group h-[450px] transition-all ease-linear hover:p-[40px] hover:h-[530px] cursor-pointer border rounded-[25px] border-transparent hover:border-gray-300 overflow-hidden relative">
+      <div className="lg:w-[432px] group h-[450px] transition-all ease-linear hover:p-[40px] hover:h-[530px] cursor-pointer border rounded-[25px] border-transparent hover:border-gray-300 overflow-hidden relative">
         <div className=" p-3 bg-primary rounded-[10px] flex items-center justify-center absolute top-[24px] left-[24px] group-hover:top-[70px]  transition-all group-hover:left-[70px]">
           <span className="text-white font-montserrat text-base  font-bold leading-[24px] ">
             {category}

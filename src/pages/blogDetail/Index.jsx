@@ -20,7 +20,8 @@ const BlogDetail = () => {
 
   const BlogApiFind = BlogApi.find(item => item.id == id);
 
-  console.log(BlogApiFind);
+  if (!BlogApiFind)
+    return <div className="text-center py-20 text-xl">Blog Not Found</div>;
 
   const {
     Date,
@@ -36,48 +37,72 @@ const BlogDetail = () => {
   } = BlogApiFind;
 
   return (
-    <div className="container">
-      <div className="my-[64px]">
-        <Heding BlogTitle={BlogTitle}></Heding>
-        <div className="grid grid-cols-[440px_10fr] gap-x-[61px] mt-[64px]">
-          <BlogLeft></BlogLeft>
+    <div className="container px-4 md:px-6 lg:px-8 mx-auto">
+      <div className="my-16">
+        {/* Blog Title Heading */}
+        <Heding BlogTitle={BlogTitle} />
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 xl:grid-cols-[440px_1fr] gap-y-10 lg:gap-x-16 mt-16">
+          {/* Sidebar */}
           <div>
+            <BlogLeft />
+          </div>
+
+          {/* Blog Content */}
+          <div>
+            {/* Blog Title Section */}
             <BlogTitlee
               BlogTitle={BlogTitle}
               user={user}
               Date={Date}
               comments={comments}
-            ></BlogTitlee>
-            <div className="my-[48px]">
-              {' '}
-              <BlogImg img={img}></BlogImg>
+            />
+
+            {/* Blog Image */}
+            <div className="my-12">
+              <BlogImg img={img} />
             </div>
-            <div>
-              <BlogDescription description={description}></BlogDescription>
+
+            {/* Blog Description */}
+            <div className="mb-10">
+              <BlogDescription description={description} />
             </div>
-            <div>
+
+            {/* Blog Steps */}
+            <div className="space-y-10 mb-10">
               {step.map(item => (
                 <div key={item.id}>
                   <AllStep
                     stepNumber={item?.stepNumber}
                     stepTitle={item?.stepTitle}
                     stepDetails={item?.stepDetails}
-                  ></AllStep>
+                  />
                 </div>
               ))}
             </div>
-            <div>
-              <DetailsPara LastParGap={LastParGap}></DetailsPara>
+
+            {/* Last Paragraph */}
+            <div className="mb-10">
+              <DetailsPara LastParGap={LastParGap} />
             </div>
-            <div>
-              <KeyWord keyWord={keyWord}></KeyWord>
+
+            {/* Keywords */}
+            <div className="mb-10">
+              <KeyWord keyWord={keyWord} />
             </div>
-            <div>
-              <Comments></Comments>
+
+            {/* Comments */}
+            <div className="mb-16">
+              <Comments />
             </div>
           </div>
         </div>
-        <Related></Related>
+
+        {/* Related Posts */}
+        <div className="mt-20">
+          <Related />
+        </div>
       </div>
     </div>
   );

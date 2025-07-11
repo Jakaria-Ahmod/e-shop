@@ -51,7 +51,7 @@ const Related = () => {
       </section>
 
       {/* Related Blogs List */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
         {RelatedBlog.slice(0, 3).map(item => (
           <BlogCard
             key={item.id}

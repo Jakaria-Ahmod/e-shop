@@ -33,7 +33,7 @@ const BlogLeft = () => {
   ];
 
   return (
-    <div className="max-w-md mx-auto space-y-6">
+    <div className="max-w-md mx-auto space-y-6 p-2">
       {/* Blog Search Section */}
       <div className="bg-[#ff624c] rounded-2xl p-[40px]">
         <h2 className="text-white text-xl font-semibold mb-4">Blog Search</h2>
@@ -68,7 +68,7 @@ const BlogLeft = () => {
       </div>
 
       {/* Tags Section */}
-      <div className="bg-[#f4f4f4] rounded-2xl p-6">
+      <div className="bg-[#f4f4f4] rounded-2xl p-6 ">
         <h2 className="text-[#303030] text-xl font-semibold mb-6">Tags</h2>
         <div className="flex flex-wrap gap-3">
           {tags.map((tag, index) => (
@@ -83,7 +83,7 @@ const BlogLeft = () => {
       </div>
 
       {/* Recent Posts Section */}
-      <div className="bg-white rounded-2xl p-6">
+      <div className=" rounded-2xl p-2 mb-5 lg:mb-0 lg:p-6 bg-white">
         <div className="mb-6">
           <h2 className="text-[#303030] font-poppins text-[24px] font-semibold leading-[60px]">
             Recent Posts
@@ -94,7 +94,7 @@ const BlogLeft = () => {
         <div className="space-y-6">
           {recentPosts.map((post, index) => (
             <div key={index} className="space-y-3">
-              <div className="bg-[#d9d9d9] rounded-[25px] overflow-hidden w-[439px] h-[237px]"></div>
+              <div className="bg-[#d9d9d9] rounded-[25px] overflow-hidden lg:w-[439px] h-[237px]"></div>
               <div>
                 <h3 className="text-[#303030] text-[20px] font-semibold leading-[30px] mb-2">
                   {post.title}

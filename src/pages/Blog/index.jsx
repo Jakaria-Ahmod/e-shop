@@ -10,7 +10,7 @@ const Blog = () => {
       <div>
         <BlogHeding></BlogHeding>
       </div>
-      <div className="my-[80px] grid grid-cols-[440px_6fr] gap-x-[96px]">
+      <div className="my-[80px] grid lg:grid-cols-[440px_6fr] gap-x-[96px]">
         <BlogLeft></BlogLeft>
         <BlogRight></BlogRight>
       </div>

@@ -2,10 +2,13 @@ import React from 'react';
 
 const KeyWord = ({ keyWord }) => {
   return (
-    <div>
-      <div className="w-[1020px] flex flex-wrap gap-x-[8px] px-[32px] py-[28px] bg-colorSeven mt-[32px] rounded-[25px]">
-        {keyWord.map(item => (
-          <button className="py-[12px] px-[20px] text-colorFour text-sm font-montserrat mt-[8px] font-normal leading-[20px] bg-white rounded-[5px] cursor-pointer">
+    <div className="mt-8 px-4 sm:px-6 lg:px-0">
+      <div className="w-full max-w-[1020px] mx-auto flex flex-wrap gap-3 sm:gap-4 md:gap-5 px-4 sm:px-6 md:px-8 py-6 bg-colorSeven rounded-2xl">
+        {keyWord.map((item, index) => (
+          <button
+            key={index}
+            className="py-2 px-4 text-colorFour text-sm sm:text-base font-montserrat font-medium bg-white rounded-md cursor-pointer hover:bg-gray-100 transition duration-200 ease-in-out"
+          >
             {item}
           </button>
         ))}

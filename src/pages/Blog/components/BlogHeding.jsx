@@ -5,11 +5,11 @@ const BlogHeding = () => {
   return (
     <div>
       <div>
-        <div className="w-[1520px] flex justify-center flex-col h-[600px] bg-colorSeven mt-[32px] rounded-[15px] p-[110px]">
-          <h2 className="text-colorFour font-poppins text-[56px] font-bold leading-[68px]">
+        <div className="xl:w-[1520px] flex justify-center flex-col lg:h-[600px] bg-colorSeven mt-[32px] rounded-[15px] p-[110px]">
+          <h2 className="text-colorFour font-poppins text-2xl lg:text-[56px] font-bold leading-[68px]">
             Tech Talk Blog
           </h2>
-          <div className="flex items-center gap-x-[16px] mt-[24px]">
+          <div className="flex items-center gap-x-[16px] lg:mt-[24px]">
             <Link
               to="/"
               className="font-montserrat text-colorFour text-base font-normal leading-[24px]"

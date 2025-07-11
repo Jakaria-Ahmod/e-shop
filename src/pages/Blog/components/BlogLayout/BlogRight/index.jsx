@@ -21,7 +21,7 @@ const BlogRight = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-y-[60px]">
+      <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:gap-y-[60px] gap-10 ">
         {currentBlogs.map(item => (
           <div key={item.id}>
             <BlogCard

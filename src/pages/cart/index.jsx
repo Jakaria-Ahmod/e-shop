@@ -129,11 +129,12 @@ const Cart = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-end gap-4 sm:gap-x-[56px] mt-[32px] lg:mb-6 xl:mb-[100px]">
-          <h3 className="text-colorFour font-poppins text-sm lg:text-[20px] font-semibold">
-            Continue Shopping
-          </h3>
+          {/* <h3 className="text-colorFour font-poppins text-sm lg:text-[20px] font-semibold"></h3> */}
           <Link to="/product">
-            <CommonButton>Update Cart</CommonButton>
+            <CommonButton>Continue Shopping</CommonButton>
+          </Link>
+          <Link to="/checkout">
+            <CommonButton>Checkout</CommonButton>
           </Link>
         </div>
 

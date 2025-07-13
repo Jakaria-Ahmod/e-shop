@@ -12,6 +12,7 @@ import Chackout from './pages/chackout';
 import MyAccout from './pages/myAccount';
 import Product from './pages/product';
 import ProductDetail from './pages/productDetail';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const router = createBrowserRouter([
@@ -48,7 +49,7 @@ function App() {
           element: <BlogDetail></BlogDetail>,
         },
         {
-          path: '/chackout',
+          path: '/checkout',
           element: <Chackout></Chackout>,
         },
         {

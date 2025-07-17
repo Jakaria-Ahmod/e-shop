@@ -38,22 +38,22 @@ const From = () => {
   });
 
   const inputClass =
-    'py-[20px] px-[32px] border mt-[12px] w-[424px] rounded-md border-gray-300 outline-none font-montserrat text-[20px] font-normal leading-[30px] opacity-75';
+    'py-[20px] px-[32px] border mt-[12px] w-full rounded-md border-gray-300 outline-none font-montserrat text-[18px] md:text-[20px] font-normal leading-[30px] opacity-75';
 
   const errorStyle = 'text-red-500 text-sm mt-1';
 
   return (
-    <div>
+    <div className="w-full">
       <div>
-        <h2 className="text-colorFour font-poppins text-[36px] font-semibold leading-[46px]">
+        <h2 className="text-colorFour font-poppins text-[28px] md:text-[36px] font-semibold leading-[38px] md:leading-[46px]">
           Billing Details
         </h2>
-        <form className="mt-[40px]" onSubmit={formik.handleSubmit}>
-          <div className="grid grid-cols-2 gap-[32px]">
+        <form className="mt-[32px] md:mt-[40px]" onSubmit={formik.handleSubmit}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[32px] gap-y-[24px]">
             {/* First Name */}
             <div>
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   First Name
                 </span>
                 <span className="text-primary">*</span>
@@ -75,7 +75,7 @@ const From = () => {
             {/* Last Name */}
             <div>
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   Last Name
                 </span>
                 <span className="text-primary">*</span>
@@ -97,7 +97,7 @@ const From = () => {
             {/* Phone */}
             <div>
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   Phone Number
                 </span>
                 <span className="text-primary">*</span>
@@ -119,7 +119,7 @@ const From = () => {
             {/* Email */}
             <div>
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   Email Address
                 </span>
                 <span className="text-primary">*</span>
@@ -139,9 +139,9 @@ const From = () => {
             </div>
 
             {/* Address */}
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   Address
                 </span>
                 <span className="text-primary">*</span>
@@ -150,7 +150,7 @@ const From = () => {
                 name="address"
                 type="text"
                 placeholder="Home Address, Auxiliary St. 12345, Anywhere State"
-                className="py-[20px] px-[32px] border mt-[12px] w-full rounded-md border-gray-300 outline-none font-montserrat text-[20px] font-normal leading-[30px] opacity-75"
+                className="py-[20px] px-[32px] border mt-[12px] w-full rounded-md border-gray-300 outline-none font-montserrat text-[18px] md:text-[20px] font-normal leading-[30px] opacity-75"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.address}
@@ -160,7 +160,7 @@ const From = () => {
               )}
             </div>
 
-            {/* Country, State, City, ZIP, Notes */}
+            {/* Country, State, City */}
             {[
               {
                 name: 'country',
@@ -180,7 +180,7 @@ const From = () => {
             ].map(field => (
               <div key={field.name}>
                 <label className="flex items-center gap-x-2.5">
-                  <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                  <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                     {field.label}
                   </span>
                   <span className="text-primary">*</span>
@@ -208,7 +208,7 @@ const From = () => {
             {/* ZIP */}
             <div>
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   ZIP Code
                 </span>
                 <span className="text-primary">*</span>
@@ -228,9 +228,9 @@ const From = () => {
             </div>
 
             {/* Notes */}
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <label className="flex items-center gap-x-2.5">
-                <span className="text-colorFour font-montserrat text-[20px] font-bold leading-[30px]">
+                <span className="text-colorFour font-montserrat text-[18px] md:text-[20px] font-bold leading-[30px]">
                   Order Notes
                 </span>
                 <span className="text-primary">*</span>
@@ -238,7 +238,7 @@ const From = () => {
               <textarea
                 name="notes"
                 placeholder="Enter your order notes ..."
-                className="py-[20px] px-[32px] min-h-[170px] border mt-[12px] w-full rounded-md border-gray-300 outline-none font-montserrat text-[20px] font-normal leading-[30px] opacity-75"
+                className="py-[20px] px-[32px] min-h-[170px] border mt-[12px] w-full rounded-md border-gray-300 outline-none font-montserrat text-[18px] md:text-[20px] font-normal leading-[30px] opacity-75"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.notes}

@@ -6,8 +6,8 @@ const ChackoutHeding = () => {
   const pageName = pathname.split('/').slice(1, 2)[0];
 
   return (
-    <div>
-      <div className="flex items-center gap-x-[16px]">
+    <div className="px-4 md:px-0">
+      <div className="flex flex-wrap items-center gap-x-[16px] gap-y-2">
         <Link
           to="/"
           className="font-montserrat text-base font-normal leading-[24px] text-colorFour"
@@ -26,7 +26,7 @@ const ChackoutHeding = () => {
         <span className="font-montserrat text-base font-normal leading-[24px] text-colorFour">
           |
         </span>
-        <span className="text-colorFour font-montserrat text-base font-bold leading-[24px]">
+        <span className="text-colorFour font-montserrat text-base font-bold leading-[24px] capitalize">
           {pageName}
         </span>
       </div>

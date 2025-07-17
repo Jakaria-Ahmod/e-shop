@@ -31,17 +31,19 @@ const ShcarceWithCart = () => {
           </div>
         </div>
         <div className="border border-l-colorFour opacity-25 h-[32px] "></div>
-        <div className="flex items-center gap-x-3">
-          <CiUser size={28} />
-          <div>
-            <h2 className="font-montserrat text-base font-normal leading-[24px]">
-              {t('User')}
-            </h2>
-            <span className="font-montserrat font-bold leading-[24px] text-base text-colorFour">
-              {t('Account')}
-            </span>
+        <Link to="/register">
+          <div className="flex items-center gap-x-3">
+            <CiUser size={28} />
+            <div>
+              <h2 className="font-montserrat text-base font-normal leading-[24px]">
+                {t('User')}
+              </h2>
+              <span className="font-montserrat font-bold leading-[24px] text-base text-colorFour">
+                {t('Account')}
+              </span>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

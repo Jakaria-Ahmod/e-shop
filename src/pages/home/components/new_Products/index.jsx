@@ -33,7 +33,7 @@ const NewProdact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
             {featuredProductApi?.slice(0, cardItems).map(prodacut => (
               <ProductCard
-                // ratings={prodacut?.ratings}
+                id={prodacut?.id}
                 prodacutImg={prodacut?.image}
                 prodactName={prodacut?.brand}
                 prodactPName={prodacut?.pName}

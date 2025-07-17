@@ -48,6 +48,7 @@ const Sellerleft = () => {
           {topSellingProducts.map(product => (
             <ProductCard
               key={product.id}
+              id={product.id}
               prodacutImg={product.img}
               prodactName={product.name}
               prodactPName={product.pName}

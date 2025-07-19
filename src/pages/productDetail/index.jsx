@@ -24,8 +24,16 @@ const ProductDetail = () => {
   // ✅ Check if data is not found
   if (!data) {
     return (
-      <div className="text-center py-20 text-red-500 font-bold text-xl">
-        Product Not Found ❌
+      <div>
+        <div className="text-center py-20 text-red-500 font-bold text-xl">
+          Product Not Found ❌
+        </div>
+        <Link
+          to="/product"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition"
+        >
+          Back to Product
+        </Link>
       </div>
     );
   }

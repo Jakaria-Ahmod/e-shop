@@ -42,7 +42,9 @@ const BuyAndCount = ({ data }) => {
           </div>
         </div>
         <div className="flex gap-x-[16px]">
-          <CommonButton>Buy Now</CommonButton>
+          <button className="bg-primary p-5 rounded-md text-white font-montserrat text-base">
+            Buy Now
+          </button>
           <button
             onClick={handleAddToCardAndRedirect}
             className="w-[62px] h-[58px] border border-primary rounded-md flex items-center justify-center cursor-pointer"

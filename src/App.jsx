@@ -13,6 +13,7 @@ import MyAccout from './pages/myAccount';
 import Product from './pages/product';
 import ProductDetail from './pages/productDetail';
 import { ToastContainer } from 'react-toastify';
+import UserProFile from './pages/profile';
 
 function App() {
   const router = createBrowserRouter([
@@ -67,6 +68,10 @@ function App() {
         {
           path: '/productdetail',
           element: <ProductDetail></ProductDetail>,
+        },
+        {
+          path: '/profile',
+          element: <UserProFile></UserProFile>,
         },
         {
           path: '*',

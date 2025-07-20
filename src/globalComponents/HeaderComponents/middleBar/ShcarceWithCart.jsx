@@ -10,7 +10,7 @@ const ShcarceWithCart = () => {
     <div>
       <div className="flex items-center justify-end gap-x-[48px]">
         <div>
-          <div className="flex items-center justify-between w-[332px] border py-[16px] px-[24px] rounded">
+          <div className="flex items-center justify-between w-[332px] border border-gray-400 py-[16px] px-[24px] rounded">
             <input
               type="text"
               placeholder={t('Search Products ...')}

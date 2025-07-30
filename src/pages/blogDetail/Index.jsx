@@ -36,6 +36,7 @@ const BlogDetail = () => {
     step,
   } = BlogApiFind;
 
+  window.scrollTo(0, 0);
   return (
     <div className="container px-4 md:px-6 lg:px-8 mx-auto">
       <div className="my-16">

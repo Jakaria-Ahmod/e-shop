@@ -67,6 +67,7 @@ const ProductDetail = () => {
     }
   }, [dispatch, data.id]);
 
+  window.scrollTo(0, 0);
   return (
     <div className="container">
       <div className="mb-[50px]">

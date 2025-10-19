@@ -1,12 +1,77 @@
-# React + Vite
+# 🧑‍💻 Developer Information
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**👨‍🎓 Developer Name:** [Md Jakaria Ahmod](https://jakaria-vert.vercel.app)  
+**💼 Profession:** MERN Stack Web Developer  
+**📧 Email:** [jakariaahmodmd@gmail.com](mailto:jakariaahmodmd@gmail.com)  
+**📞 Phone:** +8801889913945  
+**🔗 Portfolio:** [https://mdjakariaahmod.onrender.com](https://mdjakariaahmod.onrender.com)  
+**🔗 LinkedIn:** [https://www.linkedin.com/in/mdjakariaahmod/](https://www.linkedin.com/in/mdjakariaahmod/)  
+**🔗 GitHub:** [https://github.com/Jakaria-Ahmod](https://github.com/Jakaria-Ahmod)
 
-Currently, two official plugins are available:
+![Developer Image](https://drive.google.com/uc?export=view&id=1bzbCxLsaSqEBSo46ha7RNkWOS61-Srfc)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+# 🛒 E-Shop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![React](https://img.shields.io/badge/React-18.3-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-6.3-646CFF?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-38B2AC?logo=tailwindcss)
+![ReduxToolkit](https://img.shields.io/badge/Redux_Toolkit-2.8-purple?logo=redux)
+![AntDesign](https://img.shields.io/badge/Ant_Design-5.25-blue?logo=antdesign)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+---
+
+## 🛍️ Overview
+
+**E-Shop** is a modern, multilingual, and fully responsive **E-commerce Frontend Application** built with  
+**React, Redux Toolkit, Tailwind CSS, and Ant Design**.  
+It features product showcases, cart functionality, checkout forms, image zooms, countdown deals, and location maps — providing users with a complete online shopping experience.
+
+---
+
+## 🚀 Tech Stack
+
+| Technology | Description |
+|-------------|--------------|
+| ⚛️ React 18 | Core UI framework |
+| ⚡ Vite 6 | Lightning-fast build tool |
+| 🎨 Tailwind CSS 4 | Utility-first CSS framework |
+| 🧩 Ant Design | Elegant UI components |
+| 🗂️ Redux Toolkit | State management |
+| 🌍 i18next | Multi-language support |
+| 🧭 React Router 7 | Page navigation |
+| 🗺️ React Leaflet | Map integration |
+| 📦 Formik + Yup | Form handling & validation |
+| ☕ React Toastify | Notification system |
+| 🎠 Swiper | Product carousels |
+
+---
+
+## ✨ Features
+
+✅ Modern responsive UI (Mobile-first)  
+✅ Multi-language (i18next) support  
+✅ Redux-powered global state management  
+✅ Product details with image zoom  
+✅ Add to cart & checkout system  
+✅ Toast notifications  
+✅ Integrated maps (React Leaflet)  
+✅ Form validation (Formik + Yup)  
+✅ Countdown deals section  
+✅ Smooth animations & transitions  
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/e-shop.git
+cd e-shop
+
+npm i
+npm run dev
+npm run build 
